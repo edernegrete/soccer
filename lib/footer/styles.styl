@@ -1,4 +1,35 @@
 .Footer
+	bottom 0
+	display -webkit-box
+	display -moz-box
+	display -ms-flexbox
+	display -webkit-flex
 	display flex
 	justify-content space-around
 	list-style none
+	position absolute
+	padding 1em 2em
+	&-item
+		transition 1s all ease
+	&-item:nth-child(1)
+		margin-left: -20px;
+	&-item:nth-child(2)
+		margin-left: -34px
+	&:hover
+		.Footer-item:nth-child(2)
+		.Footer-item:nth-child(3)
+			margin-left: 1em;
+	&-arrow
+		border-left 12.5px solid transparent
+		border-right 12.5px solid transparent
+		border-top 12.5px solid yellow
+		content ''
+		display none
+		position absolute
+		bottom 0
+		right -22px
+		width 0px
+		height 50px
+		-webkit-transform rotate(270deg)
+		-ms-transform rotate(270deg)
+		transform rotate(270deg)
