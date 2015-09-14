@@ -1,1 +1,46 @@
-<!DOCTYPE html><html lang="es"></html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>FutbolHoy</title><link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"><link rel="stylesheet" href="./public/css/app.css"></head><body><figure class="Layout-loading"><img src="./public/images/loading.gif" class="Layout-loading-image"><figcaption>Loading....</figcaption></figure><div class="Wrapper"><header class="Layout-header"><h1 class="Header-title">Fútbol Hoy</h1></header><section class="Layout-main"><div id="calendarDay" class="Calendar-day"></div><div class="Calendar-schedule"><div class="Calendar-hour"><ul id="scheduleList" class="Calendar-hour-list"></ul></div><div class="Calendar-local-teams"><ul id="localList" class="Calendar-local-list"></ul></div><div class="Calendar-visit-teams"><ul id="visitList" class="Calendar-visit-list"></ul></div></div></section><footer class="Layout-footer"><ul class="Footer"><li class="Footer-item"><a href="https://github.com/ederyair" class="icon-github"></a></li><li class="Footer-item"><a href="https://twitter.com/ederyairr" class="icon-twitter"></a></li><li class="Footer-item"><a href="https://mx.linkedin.com/pub/eder-yair-negrete-gonzález/97/161/4b8" class="icon-linkedin"></a></li><div class="Footer-arrow"></div></ul></footer></div><script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script><script src="./public/js.js"></script></body>
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>FutbolHoy</title>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./public/css/app.css">
+</head>
+<body>
+  <figure class="Layout-loading"><img src="/public/images/loading.gif" class="Layout-loading-image">
+    <figcaption>Loading....</figcaption>
+  </figure>
+  <div class="Wrapper">
+    <header class="Layout-header">
+      <h1 class="Header-title">Fútbol Hoy</h1>
+    </header>
+    <section class="Layout-main">
+      <div id="calendarDay" class="Calendar-day"></div>
+      <div class="Calendar-schedule">
+        <div class="Calendar-hour">
+          <ul id="scheduleList" class="Calendar-hour-list"><span class="Calendar-title">Shcedule</span></ul>
+        </div>
+        <div class="Calendar-local-teams">
+          <ul id="localList" class="Calendar-local-list"><span class="Calendar-title">Local</span></ul>
+        </div>
+        <div class="Calendar-visit-teams">
+          <ul id="visitList" class="Calendar-visit-list"><span class="Calendar-title">Visit</span></ul>
+        </div>
+        <div class="Calendar-results"> 
+          <ul id="resultsList" class="Calendar-results-list"><span class="Calendar-title">Results</span></ul>
+        </div>
+      </div>
+    </section>
+    <footer class="Layout-footer">
+      <ul class="Footer">
+        <li class="Footer-item"><a href="https://github.com/ederyair" class="icon-github"></a></li>
+        <li class="Footer-item"><a href="https://twitter.com/ederyairr" class="icon-twitter"></a></li>
+        <li class="Footer-item"><a href="https://mx.linkedin.com/pub/eder-yair-negrete-gonzález/97/161/4b8" class="icon-linkedin"></a></li>
+        <div class="Footer-arrow"></div>
+      </ul>
+    </footer>
+  </div>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
+  <script src="/public/js.js"></script>
+</body>

@@ -6,11 +6,11 @@ if(isTouchDevice){
 $.getJSON(url).done(function (data) {
 	var date = data.query.results.div[0].div.table.tbody.tr[0].td.content
 	var Teamlist = data.query.results.div[0].div.table.tbody.tr;
-	console.log(Teamlist)
 	for(var i = 2; i<Teamlist.length;i++){
 		var it = 1;
 		$('#localList').append('<li>' + Teamlist[i].td[it].a.content + '</li>')
 		$('#visitList').append('<li>' + Teamlist[i].td[3].a.content + '</li>')
+		$('#resultsList').append('<li>' + Teamlist[i].td[2].a.content) + '</li>'
 		if(typeof(Teamlist[i].td[0]) != 'object'){
 			$('#scheduleList').append('<li>' + Teamlist[i].td[0] +'</li>')
 		}else{
@@ -18,6 +18,7 @@ $.getJSON(url).done(function (data) {
 		}
 		it++;
 	}
+	console.log(Teamlist)
 	$('.Layout-loading').css('display', 'none')
 	$('.Wrapper').css('display', 'block')
 	$('#calendarDay').text(date)
